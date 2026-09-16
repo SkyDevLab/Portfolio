@@ -16,6 +16,7 @@ function GithubIcon({ size = 14 }: { size?: number }) {
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 export default function Hero() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const containerRef = useRef<HTMLDivElement>(null);
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -217,14 +218,20 @@ export default function Hero() {
             {/* Background architectural shadow & frame */}
             <div className="relative rounded-2xl overflow-hidden border border-nearblack/10 bg-gradient-to-b from-white to-[#F5F1EB] p-2 shadow-2xl">
               {/* Inner card with image */}
-              <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden bg-gradient-to-b from-transparent to-nearblack/10">
-                <Image
-                  src="/surya.png"
+              <div className="relative aspect-[3/4] w-full rounded-xl overflow-hidden bg-gradient-to-b from-transparent to-nearblack/10 flex items-end justify-center">
+                <img
+                  src={`${basePath}/surya.png`}
                   alt="Surya Pratap Singh — Software Engineer"
-                  fill
-                  priority
-                  className="object-contain object-bottom transition-transform duration-700 hover:scale-[1.02]"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 45vw, 40vw"
+                  className="w-full h-full object-contain object-bottom transition-transform duration-700 hover:scale-[1.02]"
+                  loading="eager"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.endsWith('/Portfolio/surya.png') && window.location.pathname.includes('/Portfolio')) {
+                      target.src = '/Portfolio/surya.png';
+                    } else {
+                      target.src = './surya.png';
+                    }
+                  }}
                 />
 
                 {/* Top Badge: Microsoft Azure Certified */}
