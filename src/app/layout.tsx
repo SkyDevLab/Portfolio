@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const siteUrl = "https://skydevlab.github.io/Portfolio";
+const siteName = "Surya Pratap Singh | SkyDevLab";
+const title = "Surya Pratap Singh — SkyDevLab | .NET Developer & Open Source Contributor";
+const description =
+  "Official portfolio of Surya Pratap Singh, the developer behind SkyDevLab. .NET developer, open-source contributor, and software builder creating developer tools, libraries, browser extensions, and web applications.";
+
 const geist = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,42 +21,98 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Surya Pratap Singh — Software Engineer | C# / .NET | Cloud | Open Source",
-  description:
-    "Portfolio of Surya Pratap Singh — Software Engineer specializing in C#, ASP.NET Core, Cloud Architectures (Azure/AWS), Microservices, and Open Source Developer Tooling.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
   keywords: [
     "Surya Pratap Singh",
     "SkyDevLab",
-    "Software Engineer",
+    "Surya Pratap Singh SkyDevLab",
     ".NET Developer",
-    "C# Engineer",
+    "C# Developer",
     "ASP.NET Core",
-    "Azure Developer Associate",
-    "AZ-204",
-    "Microservices",
-    "Roslyn",
-    "Open Source",
+    "Software Engineer",
+    "Open Source Contributor",
+    "GitHub",
+    "Developer Tools",
+    "SkyWebFramework",
+    "PR Doctor",
+    "WhyUI",
+    "Website Upgrade Detector",
+    "Gravity Safe Code Paste",
   ],
-  authors: [{ name: "Surya Pratap Singh", url: "https://github.com/SkyDevLab" }],
-  creator: "Surya Pratap Singh",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    title: "Surya Pratap Singh — Software Engineer | C# / .NET | Cloud | Open Source",
-    description:
-      "Portfolio of Surya Pratap Singh — Software Engineer specializing in C#, ASP.NET Core, Cloud Architectures (Azure/AWS), Microservices, and Open Source Developer Tooling.",
-    siteName: "Surya Pratap Singh | SkyDevLab",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Surya Pratap Singh — Software Engineer | C# / .NET | Cloud | Open Source",
-    description:
-      "Portfolio of Surya Pratap Singh — Software Engineer specializing in C#, ASP.NET Core, Cloud Architectures (Azure/AWS), Microservices, and Open Source Developer Tooling.",
-    creator: "@SkyDevLab",
+  authors: [
+    {
+      name: "Surya Pratap Singh",
+      url: "https://github.com/SkyDevLab",
+    },
+  ],
+  creator: "Surya Pratap Singh (SkyDevLab)",
+  publisher: "SkyDevLab",
+  alternates: {
+    canonical: siteUrl,
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    locale: "en_US",
+    title,
+    description,
+    siteName,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    creator: "@SkyDevLab",
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://skydevlab.github.io/Portfolio/#person",
+  name: "Surya Pratap Singh",
+  alternateName: "SkyDevLab",
+  url: siteUrl,
+  sameAs: [
+    "https://github.com/SkyDevLab",
+    "https://www.linkedin.com/in/surya-pratap-singh-1a75b4222/",
+  ],
+  jobTitle: "Software Engineer",
+  knowsAbout: [
+    "C#",
+    ".NET",
+    "ASP.NET Core",
+    "Software Development",
+    "Open Source",
+    "Developer Tools",
+    "Cloud Computing",
+    "Web Development",
+  ],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://skydevlab.github.io/Portfolio/#website",
+  url: siteUrl,
+  name: siteName,
+  alternateName: "SkyDevLab",
+  description,
+  publisher: {
+    "@id": "https://skydevlab.github.io/Portfolio/#person",
   },
 };
 
@@ -61,6 +123,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="me" href="https://github.com/SkyDevLab" />
+        <link rel="me" href="https://www.linkedin.com/in/surya-pratap-singh-1a75b4222/" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+      </head>
       <body
         className={`${geist.variable} ${geistMono.variable} antialiased bg-linen text-nearblack`}
       >
