@@ -1,3 +1,11 @@
+# Surya Pratap Singh — SkyDevLab Portfolio
+
+Personal portfolio of **Surya Pratap Singh (SkyDevLab)** — .NET developer, open-source contributor, and software builder.
+
+**Developer identity:** SkyDevLab  
+**GitHub:** https://github.com/SkyDevLab  
+**LinkedIn:** https://www.linkedin.com/in/surya-pratap-singh-1a75b4222/
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
