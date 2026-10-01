@@ -5,7 +5,7 @@ export const dynamic = "force-static";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://skydevlab.github.io/Portfolio";
+  const baseUrl = "https://skydevlab.github.io/Portfolio/";
 
   return [
     {
