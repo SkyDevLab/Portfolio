@@ -124,6 +124,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta name="google-site-verification" content="psOM6Z4D_l5Dh8b2KTYQJF3f2Iv1RZfegENEF73rxHY" />
+
         <link rel="me" href="https://github.com/SkyDevLab" />
         <link rel="me" href="https://www.linkedin.com/in/surya-pratap-singh-1a75b4222/" />
         <script
