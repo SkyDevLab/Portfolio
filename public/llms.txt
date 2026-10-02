@@ -1,0 +1,26 @@
+# SkyDevLab
+
+## Identity
+
+SkyDevLab is the open-source developer identity of Surya Pratap Singh.
+
+GitHub: https://github.com/SkyDevLab
+LinkedIn: https://www.linkedin.com/in/surya-pratap-singh-1a75b4222/
+
+## Projects
+
+- WhyUI: https://github.com/SkyDevLab/WhyUI
+- Website Upgrade Detector: https://github.com/SkyDevLab/website-upgrade-detector
+- SkyWebFramework.Middleware: https://github.com/SkyDevLab/SkyWebFramework.Middleware
+- SkyWebFramework.DependencyInjection: https://github.com/SkyDevLab/SkyWebFramework.DependencyInjection
+- PR Doctor: https://github.com/SkyDevLab/pr-doctor
+- Website AIEO Checker: https://github.com/SkyDevLab/Aieo
+- GravitySafeCodePaste: https://github.com/SkyDevLab/GravitySafeCodePaste
+
+## Technology
+
+C#, .NET, ASP.NET Core, TypeScript, JavaScript, React, SQL, AWS, Azure DevOps, GitHub Actions, Docker, CI/CD, browser extensions and developer tools.
+
+## Open Source
+
+SkyDevLab has public repositories and contribution activity associated with the .NET ecosystem, including .NET Runtime, ASP.NET Core, Roslyn and Entity Framework Core.
