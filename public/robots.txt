@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://skydevlab.dev/sitemap.xml
+Sitemap: https://skydevlab.github.io/sitemap.xml
