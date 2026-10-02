@@ -1,44 +1,49 @@
 # Surya Pratap Singh — SkyDevLab Portfolio
 
-Personal portfolio of **Surya Pratap Singh (SkyDevLab)** — .NET developer, open-source contributor, and software builder.
+**Surya Pratap Singh** is a .NET full-stack developer and open-source contributor building developer tools, browser extensions, .NET libraries, GitHub utilities and AI-search tooling under **SkyDevLab**.
 
-**Developer identity:** SkyDevLab  
-**GitHub:** https://github.com/SkyDevLab  
-**LinkedIn:** https://www.linkedin.com/in/surya-pratap-singh-1a75b4222/
+## Canonical Identity
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+- **Developer:** Surya Pratap Singh
+- **GitHub:** https://github.com/SkyDevLab
+- **Portfolio:** SkyDevLab Portfolio
+- **LinkedIn:** https://www.linkedin.com/in/surya-pratap-singh-1a75b4222/
 
-## Getting Started
+## Featured Open-Source Projects
 
-First, run the development server:
+| Project | Area | Repository |
+|---|---|---|
+| WhyUI | Browser UI debugging | https://github.com/SkyDevLab/WhyUI |
+| Website Upgrade Detector | Web technology detection | https://github.com/SkyDevLab/website-upgrade-detector |
+| SkyWebFramework.Middleware | ASP.NET Core middleware | https://github.com/SkyDevLab/SkyWebFramework.Middleware |
+| SkyWebFramework.DependencyInjection | .NET dependency injection | https://github.com/SkyDevLab/SkyWebFramework.DependencyInjection |
+| PR Doctor | GitHub pull-request diagnostics | https://github.com/SkyDevLab/pr-doctor |
+| Website AIEO Checker | AI-search/AEO website auditing | https://github.com/SkyDevLab/Aieo |
+| GravitySafeCodePaste | Developer security utility | https://github.com/SkyDevLab/GravitySafeCodePaste |
+
+## Open-Source Contributions
+
+SkyDevLab also maintains public repositories related to major .NET ecosystems, including .NET Runtime, ASP.NET Core, Roslyn and Entity Framework Core.
+
+## Technology
+
+**C# · .NET · ASP.NET Core · SQL Server · Oracle SQL · TypeScript · JavaScript · React · AWS · Azure DevOps · GitHub Actions · Docker · CI/CD**
+
+## Purpose
+
+This repository contains the personal portfolio website for Surya Pratap Singh / SkyDevLab.
+
+For the broader project index, see:
+
+- https://github.com/SkyDevLab/SkyDevLab
+- https://github.com/SkyDevLab/SkyDevLab/blob/main/ECOSYSTEM.md
+- https://github.com/SkyDevLab/SkyDevLab/blob/main/OPEN_SOURCE.md
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Then open the local development server shown by Next.js.
